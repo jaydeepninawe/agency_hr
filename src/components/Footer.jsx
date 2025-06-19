@@ -30,13 +30,13 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand + Social */}
           <div>
-            <h3 className="text-2xl font-bold mb-1">Crito</h3>
+            <h3 className="text-2xl font-bold mb-1">TalentBridge HR</h3>
             <p className="text-gray-400 text-sm mb-2">
               Connecting Creative Service
             </p>
-            <p className="text-gray-500 text-sm">FB / Tw / Li</p>
+            {/* <p className="text-gray-500 text-sm">FB / Tw / Li</p> */}
             <p className="text-xs text-gray-600 mt-4">
-              Copyright © 2021 Lobar.net
+              Copyright © 2025 TalentBridgehr
             </p>
           </div>
 
