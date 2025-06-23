@@ -1,44 +1,86 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { HiArrowRight } from "react-icons/hi2";
 
-const Contact = () => {
+const Contact= () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 to-white flex flex-col items-center justify-center px-4 text-center">
-      {/* Wrench animation */}
-      <motion.div
-        animate={{ rotate: [0, 20, -20, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-        className="text-6xl mb-6"
-      >
-        🔧
-      </motion.div>
+    <section className="px-6 md:px-20 py-12 bg-white text-gray-900 max-h-[100vh] mb-20
+    ">
+      {/* Header */}
+      <div className="mb-12 max-w-3xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold leading-snug">
+          Love to hear from you,
+          <br />
+          Get in touch <span className="inline-block">👋</span>
+        </h2>
+      </div>
 
-      <motion.h1
-        initial={{ y: -40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl md:text-5xl font-bold text-gray-800"
-      >
-        This Page is Under Development
-      </motion.h1>
+      {/* Form */}
+      <form className="max-w-5xl mx-auto space-y-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Name */}
+          <div>
+            <label className="block mb-2 font-medium">Your name</label>
+            <input
+              type="text"
+              placeholder="Edward Snowden"
+              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+            />
+          </div>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
-        className="mt-4 text-gray-600 text-sm md:text-base max-w-md"
-      >
-        We're working hard to bring you something awesome. Please check back soon or contact our support if needed.
-      </motion.p>
+          {/* Email */}
+          <div>
+            <label className="block mb-2 font-medium">Your email</label>
+            <input
+              type="email"
+              placeholder="itanexemple@gmail.com"
+              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+            />
+          </div>
+        </div>
 
-      <motion.div
-        animate={{ scale: [1, 1.1, 1] }}
-        transition={{ repeat: Infinity, duration: 1.5 }}
-        className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded shadow transition"
-      >
-        <a href="/">Go Back Home</a>
-      </motion.div>
-    </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Interested In */}
+          <div>
+            <label className="block mb-2 font-medium">What you are interested</label>
+            <select className="w-full border border-gray-300 px-4 py-3 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-black">
+              <option>Design & Branding</option>
+              <option>Web Development</option>
+              <option>Marketing</option>
+            </select>
+          </div>
+
+          {/* Budget */}
+          <div>
+            <label className="block mb-2 font-medium">Project Budget</label>
+            <select className="w-full border border-gray-300 px-4 py-3 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-black">
+              <option>Select your budget</option>
+              <option>$1,000 - $5,000</option>
+              <option>$5,000 - $10,000</option>
+              <option>$10,000+</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Message */}
+        <div>
+          <label className="block mb-2 font-medium">Message</label>
+          <textarea
+            placeholder="Let tell us know your project about"
+            rows="5"
+            className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+          ></textarea>
+        </div>
+
+        {/* Submit */}
+        <div>
+          <button
+            type="submit"
+            className="bg-black text-white px-8 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-gray-800 transition"
+          >
+            Just Send <HiArrowRight className="text-lg" />
+          </button>
+        </div>
+      </form>
+    </section>
   );
 };
 

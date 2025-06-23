@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center border border-yellow-400 rounded-full px-6 py-2 space-x-6 font-medium text-black">
           <Link to="/" className="hover:underline decoration-yellow-400 underline-offset-4">✶ Home</Link>
           <Link to="/about" className="hover:underline decoration-yellow-400 underline-offset-4">✶ About Us</Link>
-          <Link to="/services" className="hover:underline decoration-yellow-400 underline-offset-4">Case Studies</Link>
+          <Link to="/services" className="hover:underline decoration-yellow-400 underline-offset-4">Services</Link>
           <Link to="/contact" className="hover:underline decoration-yellow-400 underline-offset-4">Get in touch</Link>
         </div>
 

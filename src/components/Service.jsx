@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiPenTool, FiCode, FiTrendingUp } from 'react-icons/fi';
 import { BsLightbulb } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 // CSS for animation
 
 const services = [
@@ -42,9 +43,9 @@ const Services = () => {
             <h2 className="text-3xl font-bold text-gray-900">Providing best service</h2>
             <p className="text-gray-500 mt-1">The awesome people who make this all possible</p>
           </div>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-5 py-2 rounded shadow">
+          <Link to="/services" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-5 py-2 rounded shadow">
             View All Services
-          </button>
+          </Link>
         </div>
 
         {/* Infinite Scroll Slider with pause on hover */}

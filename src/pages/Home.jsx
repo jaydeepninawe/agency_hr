@@ -1,11 +1,12 @@
 import teamworkImage from "../assets/hr_image.jpg"; // Transparent PNG
 import { motion } from "framer-motion";
 import Service from "../components/Service";
-import Who_we from "../components/Who_we";
+// import Who_we from "../components/Who_we";/
 import WhyBest from "../components/WhyBest";
 import FAQSection from "../components/FAQ";
 import ContactForm from "../components/ContactForm";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 const scrollToNext = () => {
@@ -45,9 +46,9 @@ const scrollToNext = () => {
 
         {/* Buttons */}
         <div className="mt-8 flex justify-between items-center max-w-md">
-          <button className="border border-black text-sm font-semibold px-4 py-2 hover:bg-black hover:text-white transition">
+          <Link to="/contact" className="border border-black text-sm font-semibold px-4 py-2 hover:bg-black hover:text-white transition">
             Get in touch
-          </button>
+          </Link>
           <p
             onClick={scrollToNext}
             className="text-sm font-semibold cursor-pointer hover:underline"
@@ -77,7 +78,7 @@ const scrollToNext = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <Who_we />
+        {/* <Who_we /> */}
         <WhyBest />
         <FAQSection/>
         <ContactForm/>

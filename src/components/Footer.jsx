@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Footer() {
   return (
     <footer className="bg-black text-white relative">
@@ -42,7 +40,7 @@ export default function Footer() {
 
           {/* Wp Afinar */}
           <div>
-            <h4 className="font-semibold mb-3">Wp Afinar</h4>
+            <h4 className="font-semibold mb-3">reach out</h4>
             <ul className="text-sm text-gray-400 space-y-1">
               <li>About</li>
               <li>Terms of Use</li>
