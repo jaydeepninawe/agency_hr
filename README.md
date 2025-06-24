@@ -1,12 +1,46 @@
-# React + Vite
+# Agency HR - Modern Human Resource Agency Website 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: [agency-hr.vercel.app](https://agency-hr.vercel.app/)
 
-Currently, two official plugins are available:
+## 🧠 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Agency HR** is a fully responsive, modern, and minimalistic website tailored for an HR consulting agency. Built with **React** and **Tailwind CSS**, this project focuses on clean UI/UX, mobile-first design, and modular components — perfect for a real-world landing page.
 
-## Expanding the ESLint configuration
+This project was developed as a portfolio piece to showcase frontend skills including layout design, component-based architecture, and responsive web development.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ✅ Fully responsive design (mobile, tablet, desktop)
+- 🎨 Modern UI built using **Tailwind CSS**
+- ⚛️ Component-based structure in **React**
+- 💡 Hero section, services, testimonials, and contact form
+- 🧭 Navigation bar with mobile hamburger menu
+- 🌐 Deployed using **Vercel**
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ Desktop
+![Agency HR Desktop](https://via.placeholder.com/1200x700.png?text=Agency+HR+Website+Desktop+View)
+
+### 📱 Mobile
+![Agency HR Mobile](https://via.placeholder.com/400x800.png?text=Agency+HR+Website+Mobile+View)
+
+---
+
+## 🛠 Tech Stack
+
+| Tech         | Usage                              |
+|--------------|------------------------------------|
+| React        | Frontend library                   |
+| Tailwind CSS | Styling and utility-first design   |
+| Vercel       | Deployment and hosting             |
+| Git & GitHub | Version control                    |
+
+---
+
+
+
